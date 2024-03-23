@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Survey Form</title>
+  </head>
+  <body>
+    
+    <main>
+    <h1 id="title">End of Class Survey Form</h1>
+    <p id="description">(Just for practice)</p>
+
+    <!-- Name Email, Age -->
+    <div class=surroundingBox>
+    <form id="survey-form">
+        <fieldset>
+       <label class="blockTypeForm" for="name" id="name-label">Name<input class="inputBoxDefaults" placeholder = "Enter your name" type="text" required id="name"/></label>
+
+       <label class="blockTypeForm" for="email" id="email-label">Email<input class="inputBoxDefaults" placeholder="Enter your email" type ="email" required id="email"/></label>
+
+       <label class="blockTypeForm" for="number" id="number-label">Age<input class="inputBoxDefaults" placeholder="Age" id="number" type="number" min="16" max="100"/></label>
+      </fieldset>
+    <!-- End of Name, Email, Age-->
+    
+    <!-- Selector -->
+    <fieldset>
+      <label class="dropDownLabel" for="dropdown">What CSCI class are you currently taking with me?<select class="inputBoxDefaults" id="dropdown">
+        <option>Select current class</option>
+        <option>CSCI 145 (Intro to Computer Science)</option>
+        <option>CSCI 201 (Data structures)</option>
+        <option>CSCI 301 (Theory of Computation)</option>
+      </select></label>
+    </fieldset>
+    <!-- End of Selector -->
+
+    <!-- Radio Buttons -->
+    <fieldset> 
+    <legend>How would you rate my teaching this semester?</legend>
+    <label for="Excellent"><input class="radioButtons" value="excellent" id="excellent" type="radio" name="ratingType" /> Excellent</label>
+    <label class="radioButtons" for="Great"><input class="radioButtons" value="great" id="great" type="radio" name="ratingType" /> Great</label>
+    <label class="radioButtons" for="ok" ><input class="radioButtons" value="ok" id="ok" type="radio" name="ratingType" /> Ok</label>
+    <label class="radioButtons" for="poor"><input class="radioButtons" value="poor" id="poor" type="radio" name="ratingType" /> Poor</label>
+    </fieldset> 
+    <!-- End of Radio Buttons -->
+
+    <!-- Checkboxes --> 
+    <fieldset >
+      <legend>Which classes would you recommend I teach?<legend>
+    <label class="checkbox_label" for= "classOne"><input value="CSCI101" id="classOne" type="checkbox"/>CSCI 101 (Computing Through Simulation)</label>
+    <label class="checkbox_label" for="classTwo"><input value="CSCI145" id="classTwo" type="checkbox"/>CSCI 145 (Intro to Computer Science)</label>
+    <label class="checkbox_label" for="classThree"><input value="CSCI201" id="classThree" type="checkbox"/>CSCI 201 (Data Structures)</label>
+    <label class="checkbox_label" for="classFour"><input value="CSCI301" id="classFour" type="checkbox"/>CSCI 301 (Theory of Computation)</label>
+    <label class="checkbox_label" for="classFive"><input value="CSCI302" id="classFive" type="checkbox"/>CSCI 302 (Algorithms and Complexity)</label>
+    <label class="checkbox_label" for="classSix"><input value="CSCI312" id="classSix" type="checkbox"/>CSCI 312 (Software Development)</label>
+    <label class="checkbox_label" for="classSeven"><input value="CSCI451" id="classSeven" type="checkbox"/>CSCI 451 (Machine Learning)</label>
+    </fieldset>
+    <!-- End of Checkboxes -->
+
+    <!-- Extra Comments Checkbox -->
+
+    <fieldset>
+      <label for="moreInfo">Any comments or suggestions?<textarea class="textBoxes" id="moreInfo" rows="3" cols="30" placeholder="Enter your comment here..."></textarea></label>
+    </fieldset>
+    <!-- End of Extra Comments Checkbox -->
+    
+    <input class="submitButton" type="submit" id="submit" />
+    
+
+
+
+    </form>
+  <main>
+  </div>
+  </body>
+ 
+</html>
